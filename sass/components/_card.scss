@@ -1,0 +1,200 @@
+// .card {
+//     perspective: 150rem;
+//     -moz-perspective: 150rem;
+//     position: relative;
+//     height: 50rem;
+
+//     &__side {
+//         background-color: blue;
+//         color: #fff;
+//         font-size: 2rem;
+        
+//         height: 50rem;
+//         transition: all .8s ease;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         backface-visibility: hidden;
+//     }
+
+//     &--front {
+//         background-color: red;
+//     }
+
+//     &--back {
+//         background-color: blue;
+//         transform: rotateY(180deg);
+//     }
+
+//     &:hover &__side--front {
+//         transform: rotateY(180deg);
+//     }
+
+//     &:hover &__side--back {
+//         transform: rotateY(0);
+//     }
+
+// }
+
+// FLIP BOX STYLING
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 510px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+ /* This container is needed to position the front and back side */
+ .flip__box--inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip__box--inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+.flip__box--front, .flip__box--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  }
+
+  /* Style the front side (fallback if image is missing) */
+.flip__box--front {
+    color: black;
+  }
+
+  /* Style the back side */
+.flip__box--back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+.flip__box--back-1 {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+}
+
+.flip__box--back-2 {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.flip__box--back-3 {
+    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+}
+
+
+// FRONT SIDE STYLING
+.card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card__picture-1 {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../image/nat-5.jpg);
+}
+
+.card__picture-2 {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../image/nat-6.jpg);
+}
+
+.card__picture-3 {
+    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../image/nat-7.jpg);
+}
+
+.card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+}
+
+.card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.card__heading-span--1 {
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-secondary-light, .85), 
+    rgba($color-secondary-dark, .85));
+}
+
+.card__heading-span--2 {
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-primary-light, .85), 
+    rgba($color-primary-dark, .85));
+}
+
+.card__heading-span--3 {
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-tertiary-light, .85), 
+    rgba($color-tertiary-dark, .85));
+}
+
+.card__details {
+    padding: 3rem;
+}
+
+.card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card__details li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.card__details:not(:last-child) {
+    border-bottom: 1px solid $color-grey-light-2;
+}
+
+// BACK SIDE STYLING
+.card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.card__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+}
+
+.card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+}
