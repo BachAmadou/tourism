@@ -3,6 +3,12 @@ used in each section.
 
 the features icons were downloaded from: http://www.linea.io/
 the story section video was taking from: https://coverr.co/
+the navigation animation was taking form:  cubic-besier.com
+
+// NAVIGATION-SECTION
+1. Checkbox hack
+2. Custom animation timing functions using cubic bezier curves (https://easings.net/)
+3. Animate "solid-color gradients"
 
 // ABOUT-SECTION
 1. background-clip
@@ -32,7 +38,7 @@ the story section video was taking from: https://coverr.co/
 3. Input-placeholder pseudo-element
 4. Focus, invalid, placeholder-show and checked pseudo-classes
 
-
+// PURE CSS POPUP
 
 
 
