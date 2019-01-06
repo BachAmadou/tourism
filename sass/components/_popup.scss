@@ -7,6 +7,11 @@
     background-color: rgba($color-black, .8);
     z-index: 9999;
 
+    // hide the popup
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
     &__content {
         @include absoluteCenter;
 
@@ -53,5 +58,31 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+    }
+
+    // show the popup
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    // Close the popup
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
     }
 }

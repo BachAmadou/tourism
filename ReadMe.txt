@@ -25,6 +25,7 @@ the navigation animation was taking form:  cubic-besier.com
 2. Backface-visibility
 3. Background blend modes
 4. Box-decoration-break
+5. Adding pure css popup when clicking the back side to the buttons
 
 //STORIES-SECTION
 1. Text flow around shapes with: shape-outside and float
@@ -38,7 +39,6 @@ the navigation animation was taking form:  cubic-besier.com
 3. Input-placeholder pseudo-element
 4. Focus, invalid, placeholder-show and checked pseudo-classes
 
-// PURE CSS POPUP
 
 
 
