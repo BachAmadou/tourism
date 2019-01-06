@@ -1,3 +1,5 @@
+// the mixin is used so we dont have to write the same code all over again
+// It works a function that you can in the code in different locations
 @mixin clearfix {
     &::after {
         content: "";
@@ -5,3 +7,11 @@
         clear: both;
     }
 }
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
