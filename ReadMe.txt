@@ -39,7 +39,12 @@ the navigation animation was taking form:  cubic-besier.com
 3. Input-placeholder pseudo-element
 4. Focus, invalid, placeholder-show and checked pseudo-classes
 
+///////////////////////////////////////////////////
 
+// MEDIA QUERIES
+1. Use Sass mixing for all the media queries
+2. Use @content and @if Sass
+3. Taking advantage of Chrome DevTools for responsive design
 
 
 
