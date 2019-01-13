@@ -45,8 +45,17 @@ the navigation animation was taking form:  cubic-besier.com
 1. Use Sass mixing for all the media queries
 2. Use @content and @if Sass
 3. Taking advantage of Chrome DevTools for responsive design
+4. Density switching: Allows the browser to choose the best image based on the screen size
+(give images with different sizes in the html using the: 'srcset' attribute).
+5. Use art direction: with 'picture' attribute to tell the browser to use one image on one screen width,
+and another image on another screen width
 
 
+// TESTING THE BROWSER SUPPORT WITH @SUPPORT
+1. Use: "Graceful degradation" 
+providing a top notch experience for modern browsers and providing an adapted 
+reduced version to browsers that don't understand all of these shiny new features.
+2. Use: backdrop-filter
 
 
 
