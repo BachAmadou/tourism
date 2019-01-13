@@ -51,11 +51,6 @@ the navigation animation was taking form:  cubic-besier.com
 and another image on another screen width
 
 
-// TESTING THE BROWSER SUPPORT WITH @SUPPORT
-1. Use: "Graceful degradation" 
-providing a top notch experience for modern browsers and providing an adapted 
-reduced version to browsers that don't understand all of these shiny new features.
-2. Use: backdrop-filter
 
 
 
